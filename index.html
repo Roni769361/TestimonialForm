@@ -18,99 +18,121 @@
 
                 body {
             background-color: #f2f2f2;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
         }
         .btn{
             border: 1px solid green;
         }
-        .footer {
-            background-color: #9e9e9e;
-            color: #fff;
-            padding: 0.2px;
-            text-align: center;
-            margin-top: 5px;
-            
-        }
+        footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Set the height of your footer */
+  background-color: #27374D; /* Set the desired background color */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
         /* Additional body styles */
 
         /* Add your custom CSS styles here */
+        
     </style>
     </style>
     
   </head>
   <body>
-    <section id="HomePart">
+    <section id="HomePart" style="background-color: #9DB2BF; padding-bottom: 10px; padding-top: 50px;">
         <div class="container" style="text-align: center;">
-            <h1 style="font-weight: 800;">Chakaria Korak Biddyapith</h1>
-            <address>Chakaria, Coxs' Bazar</address>
-            <h1 style="color: rgb(248, 16, 16);">Testimonial <span style="font-family: 'Kalpurush', sans-serif;
+            <h1 style="font-weight: 800; color: #FFFAF4;">Chakaria Korak Biddyapith</h1>
+            <address style="color: #DDE6ED">Chakaria, Coxs' Bazar</address>
+            <h1 style="color: #FFE194">Testimonial <span style="font-family: 'Kalpurush', sans-serif;
                 ">এর জন্য সম্পূর্ণ ফরমটি ইংরেজি বড় অক্ষরে পূরণ করতে হবে</span> </h1>
         </div>
     </section>
     <section id="form">
-        <div class="container">
+        <div class="container" style="padding-top: 50px;">
             <form class="row g-3">
                 <div class="col-md-6">
                   <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" placeholder="Full Name" id="name">
+                  <input type="text" class="form-control" placeholder="Full Name" id="name" required>
                 </div>
                 <div class="col-md-3">
                   <label for="roll" class="form-label">SSC Roll</label>
-                  <input type="number" class="form-control" placeholder="SSC Roll No." id="roll">
+                  <input type="number" class="form-control" placeholder="SSC Roll No." id="roll" required>
                 </div>
                 <div class="col-md-3">
                     <label for="roll" class="form-label">SSC Registration</label>
-                    <input type="number" class="form-control" placeholder="SSC Registration No." id="reg">
+                    <input type="number" class="form-control" placeholder="SSC Registration No." id="reg" required>
                   </div>
-
+                  <div class="col-md-3">
+                    <label for="roll" class="form-label">Birth Date</label>
+                    <input type="date" class="form-control" placeholder="Birth Date" id="date" required>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="group">Group</label>
+                    <select id="group" class="form-control">
+                      <option selected>Select</option>
+                      <option>Science</option>
+                      <option>Business Studis</option>
+                      <option>Humainites</option>
+                    </select>
+                  </div>
                 <div class="col-md-6">
                   <label for="father" class="form-label">Father's Name</label>
-                  <input type="text" class="form-control" id="father" placeholder="Father's Name">
+                  <input type="text" class="form-control" id="father" placeholder="Father's Name" required>
                 </div>
                 <div class="col-md-6">
                   <label for="mother" class="form-label">Mother's Name</label>
-                  <input type="text" class="form-control" id="mother" placeholder="Mother's Name">
+                  <input type="text" class="form-control" id="mother" placeholder="Mother's Name" required>
                 </div>
                 <div class="col-md-6">
                   <label for="address" class="form-label">Village</label>
-                  <input type="text" class="form-control" placeholder="Only Village Name" id="village">
+                  <input type="text" class="form-control" placeholder="Only Village Name" id="village" required>
                 </div>
                 <div class="col-md-4">
                   <label for="Post" class="form-label">Post Office</label>
-                  <input type="text" class="form-control" placeholder="Only Post Office Name" id="post">
+                  <input type="text" class="form-control" placeholder="Only Post Office Name" id="post" required>
                 </div>
                 <div class="col-md-2">
                   <label for="postCode" class="form-label">Post Code</label>
-                  <input type="number" placeholder="Post Code" class="form-control" id="postcode">
+                  <input type="number" placeholder="Post Code" class="form-control" id="postcode" required>
                 </div>
                 <div class="col-md-6">
                     <label for="policeStation" class="form-label">Police Station</label>
-                    <input type="text" placeholder="Police Station" class="form-control" id="police">
+                    <input type="text" placeholder="Police Station" class="form-control" id="police" required>
                   </div>
                   <div class="col-md-6">
                     <label for="Dist" class="form-label">District</label>
-                    <input type="text" placeholder="District Name" class="form-control" id="dist">
+                    <input type="text" placeholder="District Name" class="form-control" id="dist" required>
                   </div>
                   <div class="col-md-6">
                     <label for="Phone" class="form-label">Phone No.</label>
-                    <input type="number" placeholder="Phone Number" class="form-control" id="phone">
+                    <input type="number" placeholder="Phone Number" class="form-control" id="phone" required>
                   </div>
-                  <div class="btnHear">
+                  <div class="btnHear" style="padding-bottom: 100px;">
                     <button class="btn">Submit</button>
                     <button class="btn">Download</button>
                   </div>
               </form>
         </div>
-    </section>
-    <footer class="footer">
-        <div class="footer">
-            <p>&copy; 2023 Chakaria Korak Biddyapith. All rights reserved. | Design and development by: <span><a href="https://www.facebook.com/OnlineStoreHear/">Roni Kanti Nath</a>
 
+    </section>
+    <div class="container">
+      <footer>
+        <div class="">
+            <p>&copy; 2023 Chakaria Korak Biddyapith. All rights reserved. | Design and development by: <span><a style="color: #B0DAFF;" href="https://www.facebook.com/OnlineStoreHear/">Roni Kanti Nath</a>
             </span></p>
         </div>
     </footer>
+    <div class="container">
+    </div>
+    </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -118,5 +140,6 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  
 
 </html>
